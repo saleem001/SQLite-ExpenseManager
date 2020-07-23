@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff8e1"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Expense Manager"
+        android:textSize="30dp"
+        android:textColor="#e65100"
+        android:layout_marginTop="20dp"
+        android:gravity="center" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/FuelButton"
+        android:layout_marginLeft="10dp"
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorPrimary"
+        android:text="Fuel 33%"
+        android:textSize="20dp"
+        app:cornerRadius="20dp"
+        android:enabled="false"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/FoodButton"
+        android:layout_marginLeft="210dp"
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorPrimary"
+        android:text="Food 1%"
+        android:textSize="20dp"
+        app:cornerRadius="20dp"
+        android:enabled="false"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/EducationButton"
+        android:layout_marginLeft="10dp"
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="255dp"
+        android:background="@color/colorPrimary"
+        android:text="Education 33%"
+        android:textSize="20dp"
+        app:cornerRadius="20dp"
+        android:enabled="false"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/MiscButton"
+        android:layout_marginLeft="210dp"
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="255dp"
+        android:background="@color/colorPrimary"
+        android:text="MISC 33%"
+        android:textSize="20dp"
+        app:cornerRadius="20dp"
+        android:enabled="false"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/AddButton"
+        android:layout_marginLeft="10dp"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="455dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Add"
+        android:textSize="15dp"
+        android:onClick="ShowAddActivity"
+        app:cornerRadius="20dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/EditButton"
+        android:layout_marginLeft="210dp"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="455dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Edit"
+        android:textSize="15dp"
+        android:onClick="ShowEditActivity"
+        app:cornerRadius="20dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/DeleteButton"
+        android:layout_marginLeft="10dp"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="555dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Delete"
+        android:textSize="15dp"
+        android:onClick="ShowDeleteActivity"
+        app:cornerRadius="20dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ShowAllButton"
+        android:layout_marginLeft="210dp"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="555dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Show All"
+        android:textSize="15dp"
+        android:onClick="ShowShowAllActivity"
+        app:cornerRadius="20dp"/>
+
+</RelativeLayout>

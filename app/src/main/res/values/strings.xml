@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SQLite-ExpenseManager</string>
+
+    <string-array name="types">
+        <item>Fuel</item>
+        <item>Food</item>
+        <item>Education</item>
+        <item>Misc</item>
+    </string-array>
+
+</resources>

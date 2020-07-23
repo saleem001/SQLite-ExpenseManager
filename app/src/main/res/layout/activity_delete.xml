@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff8e1"
+    android:orientation="vertical"
+    tools:context=".DeleteActivity">
+
+
+    <include
+        android:id="@+id/my_toolbar"
+        layout="@layout/toolbar"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Delete"
+        android:textSize="30dp"
+        android:textColor="#e65100"
+        android:layout_marginTop="20dp"
+        android:gravity="center" />
+
+
+    <EditText
+        android:id="@+id/idEdit"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:ems="1"
+        android:inputType="number"
+        android:textColor="#000"
+        android:hint="Enter Id"
+        android:textSize="20dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/DeleteButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="bottom|center"
+        android:onClick="DeleteData"
+        android:text="Delete Expense"
+        android:textSize="15sp"
+        app:icon="@drawable/ic_delete_forever_black_24dp"
+        app:iconGravity="textStart"
+        app:cornerRadius="20dp"/>
+</LinearLayout>
